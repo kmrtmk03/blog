@@ -1,0 +1,338 @@
+@charset "UTF-8";
+/* 変数 */
+/* 全体 */
+/* ヘッダー */
+/* メインコンテンツ */
+/* サイドバー */
+/* メディアクエリ */
+/* ---------- リセット ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+  line-height: 1.6;
+  letter-spacing: 0.08em; }
+
+img {
+  vertical-align: bottom; }
+
+body {
+  background-color: #FCFFF5; }
+
+strong {
+  font-weight: bold; }
+
+/* ---------- PC表示 ---------- */
+/* ヘッダー */
+header {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  header::after {
+    background-color: #3E606F;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; }
+  header h1 {
+    position: absolute;
+    top: calc(50% - 19px);
+    left: calc(50% - 90% / 2);
+    z-index: 1;
+    margin: 0 auto;
+    width: 90%; }
+    header h1 a {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold; }
+
+/* メインコンテンツ */
+.index-main {
+  width: 90%;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-between;
+  /* 左側 */
+  /* 右側 */ }
+  .index-main .index-left {
+    width: 66%;
+    /* 記事 */
+    /* ページネーション */ }
+    .index-main .index-left .index-article-wrap {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      .index-main .index-left .index-article-wrap .index-article {
+        width: 48.5%;
+        border: 1px solid #aaaaaa;
+        margin-top: 30px;
+        background-color: #193441;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20% auto; }
+        .index-main .index-left .index-article-wrap .index-article:nth-of-type(1), .index-main .index-left .index-article-wrap .index-article:nth-of-type(2) {
+          margin-top: 0; }
+        .index-main .index-left .index-article-wrap .index-article a {
+          display: block;
+          background-color: #ffffff; }
+          .index-main .index-left .index-article-wrap .index-article a:hover {
+            opacity: 0.2;
+            transition: 0.3s; }
+          .index-main .index-left .index-article-wrap .index-article a .index-article-img {
+            width: 100%;
+            height: auto; }
+          .index-main .index-left .index-article-wrap .index-article a .index-article-title {
+            padding: 10px 20px 0;
+            color: #3E606F;
+            font-size: 20px; }
+          .index-main .index-left .index-article-wrap .index-article a .index-article-content p {
+            padding: 10px 20px 0; }
+          .index-main .index-left .index-article-wrap .index-article a .index-article-category {
+            text-align: right;
+            padding: 20px 20px 0;
+            font-size: 12px; }
+          .index-main .index-left .index-article-wrap .index-article a .index-article-date {
+            text-align: right;
+            padding: 10px 20px 20px;
+            font-size: 12px; }
+    .index-main .index-left .page-nav-wrap {
+      margin-top: 30px;
+      border-top: 1px solid #aaaaaa; }
+      .index-main .index-left .page-nav-wrap .page-nav {
+        display: flex; }
+        .index-main .index-left .page-nav-wrap .page-nav li {
+          padding-top: 12px; }
+          .index-main .index-left .page-nav-wrap .page-nav li a {
+            padding-right: 20px; }
+            .index-main .index-left .page-nav-wrap .page-nav li a:hover {
+              text-decoration: underline;
+              color: #193441; }
+  .index-main .index-right {
+    width: 30%; }
+    .index-main .index-right .sidebar {
+      /* リンク */
+      /* 新着記事 */ }
+      .index-main .index-right .sidebar .sidebar-midashi {
+        margin-bottom: 10px;
+        color: #3E606F;
+        font-size: 20px;
+        font-weight: bold; }
+      .index-main .index-right .sidebar .sidebar-link-wrap .sidebar-link {
+        padding: 10px 0;
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        background-color: gray;
+        border-radius: 4px;
+        color: #ffffff;
+        font-weight: bold; }
+        .index-main .index-right .sidebar .sidebar-link-wrap .sidebar-link:hover {
+          opacity: 0.7; }
+        .index-main .index-right .sidebar .sidebar-link-wrap .sidebar-link:first-child {
+          margin-top: 0; }
+      .index-main .index-right .sidebar .sidebar-link-wrap .sidebar-facebook {
+        background-color: #3C5A98; }
+      .index-main .index-right .sidebar .sidebar-link-wrap .sidebar-twitter {
+        background-color: #55ACEE; }
+      .index-main .index-right .sidebar .sidebar-link-wrap .sidebar-github {
+        background-color: #333333; }
+      .index-main .index-right .sidebar .newarticle-wrap {
+        margin-top: 40px; }
+        .index-main .index-right .sidebar .newarticle-wrap .newarticle-list-parent li {
+          margin-top: 8px; }
+          .index-main .index-right .sidebar .newarticle-wrap .newarticle-list-parent li a:hover {
+            color: #193441;
+            text-decoration: underline; }
+
+/* フッター */
+footer {
+  background-color: #3E606F;
+  /* コピーライト */ }
+  footer .copy {
+    text-align: center;
+    font-size: 10px;
+    padding: 10px 0;
+    color: #ffffff; }
+
+/* 記事ページ */
+.article-main-wrap .article-main {
+  background-color: white;
+  padding-top: 30px;
+  padding-right: 5%;
+  padding-bottom: 30px;
+  padding-left: 5%; }
+  .article-main-wrap .article-main .article-main-title {
+    font-size: 20px;
+    color: #3E606F; }
+  .article-main-wrap .article-main .article-main-sub {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px; }
+    .article-main-wrap .article-main .article-main-sub a {
+      display: block;
+      font-size: 12px; }
+    .article-main-wrap .article-main .article-main-sub .article-main-date {
+      margin-left: 10px; }
+  .article-main-wrap .article-main .article-main-content p {
+    line-height: 1.9;
+    letter-spacing: 0.1em; }
+
+/* ---------- タブレット表示 ---------- */
+@media (max-width: 768px) {
+  /* ヘッダー */
+  header h1 {
+    top: calc(50% - 19px);
+    left: calc(50% - 90% / 2); }
+    header h1 a {
+      font-size: 24px; }
+  /* メインコンテンツ */
+  .index-main {
+    display: block;
+    /* 左側 */
+    /* 右側 */ }
+    .index-main .index-left {
+      width: 100%;
+      /* 記事 */
+      /* ページネーション */ }
+      .index-main .index-left .index-article-wrap .index-article {
+        width: 48%; }
+        .index-main .index-left .index-article-wrap .index-article a:hover {
+          opacity: 1;
+          transition: 0; }
+        .index-main .index-left .index-article-wrap .index-article a .index-article-title {
+          font-weight: normal; }
+      .index-main .index-left .page-nav-wrap .page-nav {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px; }
+        .index-main .index-left .page-nav-wrap .page-nav li a {
+          font-size: 18px; }
+          .index-main .index-left .page-nav-wrap .page-nav li a:hover {
+            text-decoration: none;
+            color: #333333; }
+    .index-main .index-right {
+      margin-top: 40px;
+      width: 100%; }
+      .index-main .index-right .sidebar {
+        display: flex;
+        justify-content: space-between;
+        /* リンク */
+        /* 新着記事 */ }
+        .index-main .index-right .sidebar .sidebar-midashi {
+          text-align: center;
+          margin-bottom: 20px;
+          font-size: 20px;
+          font-weight: normal; }
+        .index-main .index-right .sidebar .sidebar-link-wrap {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          width: 32%; }
+          .index-main .index-right .sidebar .sidebar-link-wrap .sidebar-link {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: normal; }
+            .index-main .index-right .sidebar .sidebar-link-wrap .sidebar-link:hover {
+              opacity: 1; }
+            .index-main .index-right .sidebar .sidebar-link-wrap .sidebar-link:first-child {
+              margin-top: 0; }
+          .index-main .index-right .sidebar .sidebar-link-wrap .sidebar-facebook {
+            background-color: #3C5A98; }
+          .index-main .index-right .sidebar .sidebar-link-wrap .sidebar-twitter {
+            background-color: #55ACEE; }
+          .index-main .index-right .sidebar .sidebar-link-wrap .sidebar-github {
+            background-color: #333333; }
+        .index-main .index-right .sidebar .newarticle-wrap {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          width: 32%;
+          margin-top: 0;
+          border-left: 1px dotted #3E606F; }
+          .index-main .index-right .sidebar .newarticle-wrap .newarticle-list-parent li {
+            text-align: center; }
+            .index-main .index-right .sidebar .newarticle-wrap .newarticle-list-parent li a:hover {
+              color: #333333;
+              text-decoration: none; }
+  /* フッター */
+  footer {
+    /* コピーライト */ } }
+
+/* ---------- SP表示 ---------- */
+@media (max-width: 480px) {
+  /* ヘッダー */
+  header {
+    height: 50px; }
+    header::after {
+      height: 50px; }
+    header h1 {
+      top: calc(50% - 16px); }
+      header h1 a {
+        font-size: 20px; }
+  /* メインコンテンツ */
+  .index-main {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* 左側 */
+    /* 右側 */ }
+    .index-main .index-left {
+      /* 記事 */
+      /* ページネーション */ }
+      .index-main .index-left .index-article-wrap .index-article {
+        margin-top: 20px;
+        width: 100%; }
+        .index-main .index-left .index-article-wrap .index-article:nth-of-type(1), .index-main .index-left .index-article-wrap .index-article:nth-of-type(2) {
+          margin-top: 20px; }
+        .index-main .index-left .index-article-wrap .index-article:nth-of-type(1) {
+          margin-top: 0; }
+        .index-main .index-left .index-article-wrap .index-article a .index-article-title {
+          font-size: 18px;
+          padding-top: 20px; }
+        .index-main .index-left .index-article-wrap .index-article a .index-article-content {
+          display: none; }
+        .index-main .index-left .index-article-wrap .index-article a .index-article-category {
+          padding-top: 0; }
+        .index-main .index-left .index-article-wrap .index-article a .index-article-date {
+          padding-top: 6px; }
+      .index-main .index-left .page-nav-wrap {
+        margin-top: 30px;
+        border: none; }
+        .index-main .index-left .page-nav-wrap .page-nav {
+          padding-top: 0; }
+          .index-main .index-left .page-nav-wrap .page-nav li {
+            padding-top: 0; }
+    .index-main .index-right {
+      margin-top: 40px;
+      width: 100%; }
+      .index-main .index-right .sidebar {
+        display: block;
+        /* リンク */
+        /* 新着記事 */ }
+        .index-main .index-right .sidebar .sidebar-midashi {
+          margin-bottom: 10px; }
+        .index-main .index-right .sidebar .sidebar-link-wrap {
+          width: 100%; }
+          .index-main .index-right .sidebar .sidebar-link-wrap .sidebar-link {
+            width: 100%; }
+            .index-main .index-right .sidebar .sidebar-link-wrap .sidebar-link:first-child {
+              margin-top: 0; }
+        .index-main .index-right .sidebar .newarticle-wrap {
+          width: 100%;
+          margin-top: 20px;
+          border-left: none; }
+  /* フッター */
+  footer {
+    /* コピーライト */ } }
