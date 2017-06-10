@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="index-main">
+<section class="index-main singlepage">
     <!-- コンテンツ -->
     <main class="index-left">
         <!-- 記事 -->

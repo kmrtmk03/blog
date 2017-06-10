@@ -34,6 +34,18 @@
 
                 <!-- ページネーション -->
                 <div class="page-nav-wrap">
+                    <?php
+                        echo paginate_links(array(
+                                'type' => 'link',
+                                'prev_text' => '前へ',
+                                'next_text' => '次へ',
+                                'end-size' => '1',
+                                'mid-size' => '1',
+                            )
+                        )
+                    ?>
+                </div>
+                <!-- <div class="page-nav-wrap">
                     <ul class="page-nav">
                         <li><a href="#">1</a></li>
                         <li><a href="#">2</a></li>
@@ -41,7 +53,7 @@
                         <li><a href="#">8</a></li>
                         <li><a href="#">次へ</a></li>
                     </ul>
-                </div>
+                </div> -->
             </main>
             <!-- サイドバー読み込み -->
             <?php get_sidebar(); ?>

@@ -79,7 +79,7 @@ header {
         width: 48.5%;
         border: 1px solid #aaaaaa;
         margin-top: 30px;
-        background-color: #193441;
+        background-color: #3E606F;
         background-repeat: no-repeat;
         background-position: center;
         background-size: 20% auto; }
@@ -99,7 +99,8 @@ header {
             color: #3E606F;
             font-size: 20px; }
           .index-main .index-left .index-article-wrap .index-article a .index-article-content p {
-            padding: 10px 20px 0; }
+            padding: 10px 20px 0;
+            min-height: 9em; }
           .index-main .index-left .index-article-wrap .index-article a .index-article-category {
             text-align: right;
             padding: 20px 20px 0;
@@ -110,16 +111,18 @@ header {
             font-size: 12px; }
     .index-main .index-left .page-nav-wrap {
       margin-top: 30px;
-      border-top: 1px solid #aaaaaa; }
-      .index-main .index-left .page-nav-wrap .page-nav {
-        display: flex; }
-        .index-main .index-left .page-nav-wrap .page-nav li {
-          padding-top: 12px; }
-          .index-main .index-left .page-nav-wrap .page-nav li a {
-            padding-right: 20px; }
-            .index-main .index-left .page-nav-wrap .page-nav li a:hover {
-              text-decoration: underline;
-              color: #193441; }
+      border-top: 1px solid #aaaaaa;
+      display: flex; }
+      .index-main .index-left .page-nav-wrap .page-numbers {
+        padding: 5px 10px; }
+        .index-main .index-left .page-nav-wrap .page-numbers:first-child {
+          padding-left: 0; }
+        .index-main .index-left .page-nav-wrap .page-numbers:hover {
+          text-decoration: underline;
+          color: #91AA9D; }
+      .index-main .index-left .page-nav-wrap .page-numbers.current:hover {
+        text-decoration: none;
+        color: #333333; }
   .index-main .index-right {
     width: 30%; }
     .index-main .index-right .sidebar {
@@ -155,7 +158,7 @@ header {
         .index-main .index-right .sidebar .newarticle-wrap .newarticle-list-parent li {
           margin-top: 8px; }
           .index-main .index-right .sidebar .newarticle-wrap .newarticle-list-parent li a:hover {
-            color: #193441;
+            color: #91AA9D;
             text-decoration: underline; }
 
 /* フッター */
@@ -191,6 +194,42 @@ footer {
     line-height: 1.9;
     letter-spacing: 0.1em; }
 
+.article-main-content h1,
+.article-main-content h2,
+.article-main-content h3,
+.article-main-content h4 {
+  font-weight: bold; }
+
+.article-main-content h1 {
+  font-size: 24px; }
+
+.article-main-content h2 {
+  font-size: 20px; }
+
+.article-main-content h3 {
+  font-size: 18px; }
+
+.article-main-content h4,
+.article-main-content h5,
+.article-main-content h6 {
+  font-size: 16px; }
+
+.article-main-content ul li,
+.article-main-content ol li {
+  margin-left: 2em; }
+
+.article-main-content ul li {
+  list-style-type: disc; }
+
+.article-main-content ol li {
+  list-style: decimal; }
+
+.article-main-content a {
+  text-decoration: underline;
+  color: #3E606F; }
+  .article-main-content a:hover {
+    color: #91AA9D; }
+
 /* ---------- タブレット表示 ---------- */
 @media (max-width: 768px) {
   /* ヘッダー */
@@ -215,15 +254,8 @@ footer {
           transition: 0; }
         .index-main .index-left .index-article-wrap .index-article a .index-article-title {
           font-weight: normal; }
-      .index-main .index-left .page-nav-wrap .page-nav {
-        display: flex;
-        justify-content: center;
-        padding-top: 10px; }
-        .index-main .index-left .page-nav-wrap .page-nav li a {
-          font-size: 18px; }
-          .index-main .index-left .page-nav-wrap .page-nav li a:hover {
-            text-decoration: none;
-            color: #333333; }
+      .index-main .index-left .page-nav-wrap {
+        justify-content: center; }
     .index-main .index-right {
       margin-top: 40px;
       width: 100%; }
@@ -310,10 +342,6 @@ footer {
       .index-main .index-left .page-nav-wrap {
         margin-top: 30px;
         border: none; }
-        .index-main .index-left .page-nav-wrap .page-nav {
-          padding-top: 0; }
-          .index-main .index-left .page-nav-wrap .page-nav li {
-            padding-top: 0; }
     .index-main .index-right {
       margin-top: 40px;
       width: 100%; }

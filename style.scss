@@ -1,7 +1,8 @@
 /* 変数 */
 $MainColor: #3E606F; //メインカラー
 $SubColor: #3E606F; //サブカラー
-$HoverColor: #193441;
+$HoverColor: #3E606F; //ホバー時の色の変化
+$HoverTextColor: #91AA9D; //テキストホバー時の色の変化
 $BodyColor: #FCFFF5; //body背景
 $MidashiColor: #3E606F; //見出しの色
 $Text-Color: #333333; //文字のメインカラー
@@ -138,6 +139,7 @@ header {
                     .index-article-content {
                         p {
                             padding: 10px 20px 0;
+                            min-height: 9em;
                         }
                     }
                     .index-article-category {
@@ -161,21 +163,22 @@ header {
         .page-nav-wrap {
             margin-top: 30px;
             border-top: 1px solid $BorderColor;
-            .page-nav {
-                display: flex;
-                li {
-                    padding: {
-                        top: 12px;
-                    }
-                    a {
-                        padding: {
-                            right: 20px;
-                        }
-                        &:hover {
-                            text-decoration: underline;
-                            color: $HoverColor;
-                        }
-                    }
+            display: flex;
+            .page-numbers {
+                // background-color: red;
+                padding: 5px 10px;
+                &:first-child {
+                    padding-left: 0;
+                }
+                &:hover {
+                    text-decoration: underline;
+                    color: $HoverTextColor;
+                }
+            }
+            .page-numbers.current {
+                &:hover {
+                    text-decoration: none;
+                    color: $Text-Color;
                 }
             }
         }
@@ -229,7 +232,7 @@ header {
                         margin-top: 8px;
                         a {
                             &:hover {
-                                color: $HoverColor;
+                                color: $HoverTextColor;
                                 text-decoration: underline;
                             }
                         }
@@ -297,6 +300,51 @@ footer {
         }
     }
 }
+.article-main-content {
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-weight: bold;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4,
+    h5,
+    h6 {
+        font-size: 16px;
+    }
+    ul,
+    ol {
+        li {
+            margin-left: 2em;
+        }
+    }
+    ul {
+        li {
+            list-style-type: disc;
+        }
+    }
+    ol {
+        li {
+            list-style: decimal;
+        }
+    }
+    a {
+        text-decoration: underline;
+        color: #3E606F;
+        &:hover {
+            color: #91AA9D;
+        }
+    }
+}
 
 /* ---------- タブレット表示 ---------- */
 @media (max-width: $TabWidth) {
@@ -350,20 +398,7 @@ footer {
             }
             /* ページネーション */
             .page-nav-wrap {
-                .page-nav {
-                    display: flex;
-                    justify-content: center;
-                    padding-top: 10px;
-                    li {
-                        a {
-                            font-size: 18px;
-                            &:hover {
-                                text-decoration: none;
-                                color: $Text-Color;
-                            }
-                        }
-                    }
-                }
+                justify-content: center;
             }
         }
         /* 右側 */
@@ -508,14 +543,6 @@ footer {
             .page-nav-wrap {
                 margin-top: 30px;
                 border: none;
-                .page-nav {
-                    padding-top: 0;
-                    li {
-                        padding-top: 0;
-                        a {
-                        }
-                    }
-                }
             }
         }
         /* 右側 */
