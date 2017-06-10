@@ -29,7 +29,13 @@
         <div class="newarticle-wrap">
             <h2 class="sidebar-midashi">CATEGORY</h2>
             <ul class="newarticle-list-parent">
-                <?php wp_list_categories('title_li=&depth=1'); ?>
+                <?php
+                    $showCategory = array(
+                        'title_li' => null,
+                        'show_count' => '1',
+                    );
+                    wp_list_categories($showCategory);
+                 ?>
             </ul>
         </div>
     </div>

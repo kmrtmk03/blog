@@ -45,15 +45,6 @@
                         )
                     ?>
                 </div>
-                <!-- <div class="page-nav-wrap">
-                    <ul class="page-nav">
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">…</a></li>
-                        <li><a href="#">8</a></li>
-                        <li><a href="#">次へ</a></li>
-                    </ul>
-                </div> -->
             </main>
             <!-- サイドバー読み込み -->
             <?php get_sidebar(); ?>
