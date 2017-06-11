@@ -12,7 +12,10 @@
                             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                                 <!-- 記事サムネイル -->
                                 <!-- サムネイルの比率は16:9で固定 -->
-                                <img class="index-article-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/test.jpg" alt="">
+                                <div class="index-article-img">
+                                    <?php the_post_thumbnail('null'); ?>
+                                </div>
+                                <!-- <img class="index-article-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/test.jpg" alt=""> -->
                                 <!-- 記事タイトル -->
                                 <h3 class="index-article-title"><?php the_title(); ?></h3>
                                 <!-- 記事本文（抜粋) -->

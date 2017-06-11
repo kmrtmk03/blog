@@ -15,12 +15,22 @@
                     <div class="article-main-content">
                         <?php the_content(); ?>
                     </div>
+
+
+                    <div class="single-share">
+                        <a href="https://www.facebook.com/sharer.php?u=<?php echo urlencode(get_permalink()); ?>&amp;t=<?php urlencode(the_title()); ?>" class="single-facebook">Facebookでシェア</a>
+                        <a href="http://twitter.com/intent/tweet?text=<?php echo urlencode(the_title("","",0)); ?>&amp;<?php echo urlencode(get_permalink()); ?>&amp;url=<?php echo urlencode(get_permalink()); ?>" class="single-twitter">Twitterでシェア</a>
+                    </div>
+                </div>
+                <div class="single-move">
+                    <?php previous_post_link('%link','前の記事'); ?>
+                    <a href="<?php echo home_url(); ?>" class="Margin-Left4 Margin-Right4"><i class="fa fa-home" aria-hidden="true"></i></a>
+                    <?php next_post_link('%link','次の記事'); ?>
                 </div>
             </artcle>
+
         <?php endwhile; endif; ?>
 
-        <div class="">
-        </div>
 
     </main>
     <?php get_sidebar(); ?>

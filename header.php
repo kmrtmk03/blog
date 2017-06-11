@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- スタイルシート読み込み -->
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
         <?php wp_head(); ?>
     </head>
     <body>
