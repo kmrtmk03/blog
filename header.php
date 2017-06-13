@@ -15,5 +15,9 @@
         <!-- ヘッダー -->
         <header>
             <!-- ロゴ -->
-            <h1><a href="<?php echo esc_url(home_url()); ?>"><?php bloginfo('name') ?></a></h1>
+            <h1>
+                <a href="<?php echo esc_url(home_url()); ?>">
+                    <img class="header-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.svg" alt="">
+                </a>
+            </h1>
         </header>

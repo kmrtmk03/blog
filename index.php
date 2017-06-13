@@ -3,33 +3,32 @@
         <!-- メイン -->
         <section class="index-main">
             <!-- コンテンツ -->
-            <main class="index-left">
+            <main class="l-left">
                 <!-- 記事 -->
                 <div class="index-article-wrap">
                     <?php if(have_posts()): while(have_posts()): the_post(); ?>
                         <!-- 記事個別 -->
-                        <article class="index-article" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/images/shousai.svg)">
+                        <article class="index-article">
                             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                <!-- 記事日付 -->
+                                <p class="index-article-date"><?php echo get_the_date(); ?></p>
+                                <!-- 記事タイトル -->
+                                <h3 class="index-article-title"><?php the_title(); ?></h3>
                                 <!-- 記事サムネイル -->
                                 <!-- サムネイルの比率は16:9で固定 -->
                                 <div class="index-article-img">
                                     <?php the_post_thumbnail('null'); ?>
                                 </div>
-                                <!-- <img class="index-article-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/test.jpg" alt=""> -->
-                                <!-- 記事タイトル -->
-                                <h3 class="index-article-title"><?php the_title(); ?></h3>
                                 <!-- 記事本文（抜粋) -->
                                 <div class="index-article-content">
                                     <?php the_excerpt(); ?>
                                 </div>
                                 <!-- 記事カテゴリー -->
                                 <?php
-                                    /* カテゴリーを取得 */
-                                    $articleCategory = get_the_category();
+                                /* カテゴリーを取得 */
+                                $articleCategory = get_the_category();
                                 ?>
-                                <p class="index-article-category"><?php echo $articleCategory[0]->name; ?></p>
-                                <!-- 記事日付 -->
-                                <p class="index-article-date"><?php echo get_the_date(); ?></p>
+                                <p class="index-article-category"><i class="fa fa-folder icon-awesome" aria-hidden="true"></i><?php echo $articleCategory[0]->name; ?></p>
                             </a>
                         </article>
                     <?php endwhile; endif; ?>
