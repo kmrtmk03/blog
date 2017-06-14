@@ -2,13 +2,14 @@
 <html>
     <head>
         <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
-        <!-- 文字コート設定 -->
         <meta charset="<?php bloginfo('charset'); ?>">
-        <!-- viewport設定 -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- スタイルシート読み込み -->
+        <meta name="author" content="キムラトモキ">
+        <meta name="keywords" content="web制作, HTML, CSS, JavaScript, PHP, WordPress, デザイン, カメラ, IoT">
+        <!-- metaタグ-description -->
+        <?php echo_meta_description_tag(); ?>
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <script src="https://use.fontawesome.com/df5c304689.js"></script>
         <?php wp_head(); ?>
     </head>
     <body>

@@ -8,11 +8,11 @@
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/prof.jpg" alt="" class="prof-img">
                 <p class="prof-name"><?php the_author_meta('prof-name'); ?></p>
                 <p class="prof-moji">和歌山出身。1993年生まれ。<br>フロントエンドエンジニアをしています。</p>
-                <a class="prof-link" href="https://kmrtmk03.sakura.ne.jp/pt/" target="_blank">ポートフォリオサイト</a>
-                <div class="prof-sns">
-                    <a class="footer-link footer-facebook" href="<?php the_author_meta('facebook'); ?>" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                    <a class="footer-link footer-instagram" href="<?php the_author_meta('instagram'); ?>" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a class="footer-link footer-github" href="<?php the_author_meta('github'); ?>" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <div class="prof-link-wrap">
+                    <a class="prof-link my-prof" href="<?php the_author_meta('portfolio'); ?>" target="_blank"><i class="fa fa-user" aria-hidden="true"></i>ポートフォリオサイト</a>
+                    <a class="prof-link sns-facebook" href="<?php the_author_meta('facebook'); ?>" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook</a>
+                    <a class="prof-link sns-instagram" href="<?php the_author_meta('instagram'); ?>" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a>
+                    <a class="prof-link sns-github" href="<?php the_author_meta('github'); ?>" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
                 </div>
             </div>
         </section>

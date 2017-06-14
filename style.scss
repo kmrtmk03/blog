@@ -26,6 +26,7 @@ $BorderRadius: 4px;
 $Facebook: #3C5A98; //facebookの色
 $Twitter: #55ACEE; //twitterの色
 $Github: #333333; //githubの色
+$Instagram: #bd339f; //instagramの色
 /* メディアクエリ */
 $SpWidth: 480px; //SP表示
 $TabWidth: 768px; //タブレット表示
@@ -84,10 +85,11 @@ header {
         left: 5%;
     }
     h1 {
+        padding: 10px 0;
         a {
             color: white;
             .header-logo {
-                height: 30px;
+                height: 20px;
             }
         }
     }
@@ -113,6 +115,7 @@ header {
                     display: block;
                     background-color: #ffffff;
                     &:hover {
+                        transition: 0.3s;
                         opacity: 0.6;
                         .index-article-title {
                             color: $SubColor;
@@ -189,19 +192,21 @@ header {
             justify-content: center;
             .page-numbers {
                 text-align: center;
-                background-color: #ffffff;
-                border: 1px solid $BorderColor;
+                background-color: #999999;
+                border-radius: $BorderRadius;
+                color: #ffffff;
                 padding: 5px 10px;
-                margin-left: 10px;
+                margin-left: 4px;
                 &:first-child {
+                    margin-left: 0;
                 }
                 &:hover {
-                    color: #ffffff;
+                    transition: 0.3s;
                     background-color: $SubColor;
                 }
             }
             .page-numbers.current {
-                background-color: #aaaaaa;
+                background-color: $MainColor;
                 color: #ffffff;
                 &:hover {
                     text-decoration: none;
@@ -270,7 +275,10 @@ header {
                     }
                 }
                 .sidebar-prof {
-                    padding-left: 10px;
+                    padding: {
+                        left: 10px;
+                        right: 10px;
+                    }
                     .prof-img {
                         width: 30%;
                         height: auto;
@@ -283,38 +291,53 @@ header {
                     .prof-moji {
                         margin-bottom: 20px;
                     }
-                    .prof-link {
-                        background-color: $MainColor;
-                        border-radius: $BorderRadius;
-                        border: 1px solid $MainColor;
-                        color: #ffffff;
-                        padding: 6px 10px;
-                        &:hover {
-                            // opacity: 0.7;
-                            background-color: $SubColor;
-                            border-color: $SubColor;
-                        }
-                    }
-                    .prof-sns {
+                    .prof-link-wrap {
                         margin-top: 20px;
-                        a {
-                            margin-left: 10px;
+                        .prof-link {
+                            font-size: 12px;
+                            display: block;
+                            padding: 10px 16px;
+                            color: #ffffff;
+                            margin-top: 10px;
+                            border-radius: $BorderRadius;
+                            background-color: #999;
                             &:first-child {
                                 margin-left: 0;
                             }
                             &:hover {
-                                opacity: 0.7;
+                                transition: 0.4s;
                             }
                             i {
-                                font-size: 24px;
-                                color: #666666;
+                                font-size: 16px;
+                                color: #ffffff;
+                                padding-right: 10px;
+                            }
+                        }
+                        .my-prof {
+                            &:hover {
+                                background-color: $SubColor;
+                            }
+                        }
+                        .sns-facebook {
+                            &:hover {
+                                background-color: $Facebook;
+                            }
+                        }
+                        .sns-instagram {
+                            &:hover {
+                                background-color: $Instagram;
+                            }
+                        }
+                        .sns-github {
+                            &:hover {
+                                background-color: $Github;
                             }
                         }
                     }
                 }
                 .newarticle-list-parent {
                     li {
-                        margin-top: 4px;
+                        margin-top: 8px;
                         padding-left: 10px;
                         a {
                             // color: $TextLinkColor;
@@ -333,63 +356,6 @@ header {
 footer {
     background: {
         color: $MainColor;
-    }
-    .footer-prof {
-        padding: {
-            top: 50px;
-            bottom: 10px;
-        }
-        text-align: center;
-        .prof-img {
-            width: 150px;
-            height: auto;
-            border-radius: 50%;
-            border: 2px solid #ffffff;
-            margin-bottom: 10px;
-        }
-        .prof-name {
-            color: #ffffff;
-            margin: {
-                bottom: 6px;
-            }
-            font: {
-                size: 16px;
-            }
-        }
-        p {
-            color: #ffffff;
-            margin-bottom: 30px;
-        }
-        a {
-            color: #ffffff;
-            text-decoration: underline;
-            &:hover {
-                opacity: 0.7;
-            }
-        }
-    }
-    .footer-sns {
-        background-color: $MainColor;
-        text-align: center;
-        padding: {
-            top: 10px;
-            bottom: 40px;
-        }
-        .footer-link {
-            margin: {
-                left: 10px;
-            }
-            &:first-child {
-                margin-left: 0;
-            }
-        }
-        .fa {
-            font-size: 30px;
-            color: #ffffff;
-            &:hover {
-                opacity: 0.7;
-            }
-        }
     }
     /* コピーライト */
     .copy {
@@ -440,8 +406,18 @@ footer {
             }
             color: $MidashiColor;
         }
+        .article-main-thumbnail {
+            padding: {
+                bottom: 20px;
+            }
+            width: 100%;
+            img {
+                width: 60%;
+                height: auto;
+            }
+        }
         .article-main-content {
-            margin-top: 40px;
+            margin-top: 0px;
             p {
                 line-height: 1.9;
                 letter-spacing: 0.1em;
@@ -452,7 +428,6 @@ footer {
             margin-bottom: 10px;
             text-align: center;
             a {
-                color: #ffffff;
                 font: {
                     size: 12px;
                 }
@@ -460,6 +435,9 @@ footer {
                 border-radius: $BorderRadius;
                 &:hover {
                     opacity: 0.7;
+                }
+                .fa {
+                    color: #fff;
                 }
             }
             .single-facebook {
@@ -471,33 +449,24 @@ footer {
         }
     }
     .single-move {
-        margin-top: 30px;
+        margin-top: 0px;
         text-align: center;
         a,
         a>i {
             color: $MainColor;
         }
         a {
-            border: 1px solid $BorderColor;
             border-radius: $BorderRadius;
-            color: #666666;
-            padding: 10px;
+            background-color: #999999;
+            color: #ffffff;
+            padding: 6px 12px;
+            font-size: 12px;
             &:hover {
-                color: #ffffff;
+                transition: 0.3s;
                 background-color: $SubColor;
-                border-color: $SubColor;
             }
             &:not(:first-child) {
-                margin-left: 10px;
-            }
-            i {
-                font: {
-                    size: 22px;
-                }
-                &:hover {
-                    text-decoration: underline;
-                    color: $HoverTextColor;
-                }
+                margin-left: 4px;
             }
         }
     }
@@ -510,7 +479,7 @@ footer {
     h5,
     h6 {
         margin: {
-            top: 1em;
+            top: 50px;
             bottom: 0.3em;
         }
     }
@@ -529,7 +498,7 @@ footer {
         font-size: 24px;
     }
     h2 {
-        font-size: 20px;
+        font-size: 18px;
         border-left: 8px solid $MainColor;
         padding-left: 10px;
         color: $MainColor;
@@ -608,8 +577,9 @@ footer {
     header {
         h1 {
             a {
+                display: block;
                 .header-logo {
-                    height: 20px;
+                    height: 14px;
                 }
             }
         }
@@ -729,29 +699,37 @@ footer {
                             }
                         }
                     }
-                    .sidebar-prof {
-                        padding-left: 2%;
-                        .prof-img {
-                        }
-                        .prof-name {
-                        }
-                        .prof-moji {
-                        }
+                .sidebar-prof {
+                    .prof-img {
+                        width: 40%;
+                        border-radius: 5%;
+                    }
+                    .prof-name {
+                        color: $SubColor;
+                        font-weight: bold;
+                    }
+                    .prof-moji {
+                    }
+                    .prof-link-wrap {
+                        margin-top: 20px;
                         .prof-link {
+                            &:first-child {
+                            }
                             &:hover {
                             }
-                        }
-                        .prof-sns {
-                            a {
-                                &:first-child {
-                                }
-                                &:hover {
-                                }
-                                i {
-                                }
+                            i {
                             }
                         }
+                        .my-prof {
+                        }
+                        .sns-facebook {
+                        }
+                        .sns-instagram {
+                        }
+                        .sns-github {
+                        }
                     }
+                }
                     .newarticle-list-parent {
                         li {
                             a {
@@ -808,6 +786,16 @@ footer {
                     top: 0px;
                 }
             }
+        .article-main-thumbnail {
+            padding: {
+                bottom: 20px;
+            }
+            width: 100%;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
             .article-main-content {
                 margin-top: 0px;
                 p {
@@ -816,7 +804,7 @@ footer {
                 }
             }
             .single-share {
-                margin-top: 40px;
+                margin-top: 80px;
                 margin-bottom: 0px;
                 a {
                     font: {
@@ -837,6 +825,7 @@ footer {
             a>i {
             }
             a {
+                padding: 10px 16px;
                 &:hover {
                 }
                 &:not(:first-child) {

@@ -45,16 +45,6 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
-	"\/images\/logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/images\/logo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/images\/prof.jpg": {
 		"ft": 16384,
 		"iS": 733666,
@@ -127,6 +117,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/thumbnail-wordpress.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/images\/thumbnail-wordpress.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
