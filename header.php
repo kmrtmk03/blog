@@ -12,13 +12,13 @@
         <script src="https://use.fontawesome.com/df5c304689.js"></script>
         <?php wp_head(); ?>
     </head>
-    <body>
+    <body>        
         <!-- ヘッダー -->
         <header>
             <!-- ロゴ -->
-            <h1>
+            <h2>
                 <a href="<?php echo esc_url(home_url()); ?>">
                     <img class="header-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.svg" alt="">
                 </a>
-            </h1>
+            </h2>
         </header>

@@ -23,7 +23,7 @@
 
     // 概要の文章の表示文字数を指定
     function myLength($length) {
-        return 120;
+        return 200;
     }
     add_filter('excerpt_mblength', 'myLength');
 
@@ -69,3 +69,49 @@
         echo '<meta name="description" content="' . get_meta_description() . '" />' . "\n";
       }
     }
+
+    //カテゴリー取得
+    function category_list() {
+        $cats = get_the_category();
+        foreach($cats as $cat) {
+            echo '<a href="'.get_category_link($cat->term_id).'" ';
+            echo 'class="article-main-category"><i class="fa fa-folder icon-awesome" aria-hidden="true"></i>';
+            echo esc_html($cat->name);
+            echo '</a>';
+        }
+    }
+
+    //タグを表示
+    function show_tags() {
+        $tags = get_the_tags();
+        foreach ($tags as $tag) {
+            echo '<a href="'.get_tag_link($tag->term_id).'"><i class="fa fa-tag icon-awesome" aria-hidden="true"></i>'.$tag->name.'</a>';
+        }
+    }
+
+    // ページネーション
+    function pagenate() {
+        echo paginate_links(array(
+                'type' => 'link',
+                'prev_text' => '前へ',
+                'next_text' => '次へ',
+                'end-size' => '1',
+                'mid-size' => '1',
+            )
+        );
+    }
+
+    // 続きを読む
+    function remove_more_jump_link($link) {
+        $offset = strpos($link, '#more-');
+
+        if ($offset) {
+            $end = strpos($link, '"',$offset);
+        }
+        if ($end) {
+            $link = substr_replace($link, '', $offset, $end-$offset);
+        }
+
+        return $link;
+    }
+    add_filter('the_content_more_link', 'remove_more_jump_link');

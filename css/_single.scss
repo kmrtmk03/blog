@@ -1,0 +1,183 @@
+/* 記事ページ */
+.article-main-wrap {
+    .article-main {
+        padding: {
+            bottom: 30px;
+            left: 10px;
+            right: 10px;
+        }
+        .article-main-sub {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 30px;
+            a {
+                margin-left: 14px;
+                display: block;
+                font: {
+                    size: 12px;
+                }
+                &:hover {
+                    text-decoration: underline;
+                    color: $HoverTextColor;
+                }
+            }
+            .article-main-date {
+                margin-left: 0;
+            }
+        }
+        .article-main-title {
+            margin-bottom: 10px;
+            font: {
+                size: 20px;
+                weight: bold;
+            }
+            color: $MidashiColor;
+        }
+        .article-main-thumbnail {
+            width: 100%;
+            margin-bottom: 30px;
+            img {
+                width: 80%;
+                height: auto;
+            }
+        }
+        .article-main-content {
+            margin-top: 0px;
+            p {
+                line-height: 1.9;
+                letter-spacing: 0.1em;
+            }
+        }
+        .single-share {
+            margin: {
+                top: 80px;
+                bottom: 20px;
+            }
+            text-align: center;
+            a {
+                color: #ffffff;
+                font: {
+                    size: 12px;
+                }
+                padding: 10px;
+                border-radius: $BorderRadius;
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+            .single-facebook {
+                border: 1px solid $Facebook;
+                color: $Facebook;
+                &:hover {
+                    background-color: $Facebook;
+                }
+            }
+            .single-twitter {
+                border: 1px solid $Twitter;
+                color: $Twitter;
+                &:hover {
+                    background-color: $Twitter;
+                }
+            }
+        }
+    }
+    .single-move {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        border-top: 1px dashed black;
+        padding-top: 20px;
+        li {
+            width: 20%;
+            &:nth-of-type(1) {
+                text-align: left;
+            }
+            &:nth-of-type(2) {
+                text-align: center;
+            }
+            &:nth-of-type(3) {
+                text-align: right;
+            }
+            a {
+                font-size: 12px;
+                &:hover {
+                    text-decoration: underline;
+                    color: $LinkHoverColor;
+                }
+            }
+            i {
+                font-size: 20px;
+                &:hover {
+                    text-decoration: underline;
+                    color: $LinkHoverColor;
+                }
+            }
+        }
+    }
+}
+
+.article-main-content {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: {
+            top: 50px;
+            bottom: 0.3em;
+        }
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-weight: bold;
+    }
+    h1,
+    h2,
+    h3 {
+        color: $MainColor;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 18px;
+        border-left: 8px solid $MainColor;
+        padding-left: 10px;
+        color: $MainColor;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4,
+    h5,
+    h6 {
+        font-size: 16px;
+    }
+    ul,
+    ol {
+        li {
+            margin-left: 2em;
+        }
+    }
+    ul {
+        li {
+            list-style-type: disc;
+        }
+    }
+    ol {
+        li {
+            list-style: decimal;
+        }
+    }
+    a {
+        text-decoration: underline;
+        color: #3E606F;
+        &:hover {
+            color: #91AA9D;
+        }
+    }
+}

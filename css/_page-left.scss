@@ -1,0 +1,150 @@
+    .l-left {
+        width: 72%;
+        /* 記事 */
+        .index-article-wrap {
+            .index-article {
+                border-bottom: 1px dashed black;
+                width: 100%;
+                padding: 40px 10px;
+                &:nth-of-type(1) {
+                    padding-top: 0;
+                }
+                .article-content {
+                    margin-bottom: 0;
+                    .index-article-img {
+                        width: 70%;
+                        height: auto;
+                        img {
+                            width: auto;
+                            height: auto;
+                            max-width: 100%;
+                            max-height: 100%;
+                        }
+                    }
+                    .index-article-content {
+                        .more-link {
+                            border: 1px solid black;
+                            border-radius: $BorderRadius;
+                            padding: 10px 0;
+                            width: 30%;
+                            text-align: center;
+                            display: block;
+                            margin-top: 30px;
+                            text-decoration: none;
+                            background-color: #ffffff;
+                            color: black;
+                            &:hover {
+                                border-color: $LinkHoverColor;
+                                background-color: $LinkHoverColor;
+                                color: #ffffff;
+                            }
+                        }
+                        h1,
+                        h2,
+                        h3,
+                        h4,
+                        h5,
+                        h6 {
+                            margin: {
+                                top: 50px;
+                                bottom: 0.3em;
+                            }
+                        }
+                        h1,
+                        h2,
+                        h3,
+                        h4 {
+                            font-weight: bold;
+                        }
+                        h1,
+                        h2,
+                        h3 {
+                            color: $MainColor;
+                        }
+                        h1 {
+                            font-size: 24px;
+                        }
+                        h2 {
+                            font-size: 18px;
+                            border-left: 8px solid $MainColor;
+                            padding-left: 10px;
+                            color: $MainColor;
+                        }
+                        h3 {
+                            font-size: 18px;
+                        }
+                        h4,
+                        h5,
+                        h6 {
+                            font-size: 16px;
+                        }
+                        ul,
+                        ol {
+                            li {
+                                margin-left: 2em;
+                            }
+                        }
+                        ul {
+                            li {
+                                list-style-type: disc;
+                            }
+                        }
+                        ol {
+                            li {
+                                list-style: decimal;
+                            }
+                        }
+                        a {
+                            text-decoration: underline;
+                            color: #3E606F;
+                            &:hover {
+                                color: #91AA9D;
+                            }
+                        }
+                        p {
+                            margin: {
+                                top: 20px;
+                            }
+                        }
+                    }
+                }
+                .index-article-link {
+                    display: inline-block;
+                    color: $LinkColor;
+                    &:hover {
+                        color: $LinkHoverColor;
+                        text-decoration: underline;
+
+                    }
+                }
+            }
+        }
+
+        /* ページネーション */
+        .page-nav-wrap {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            .page-numbers {
+                text-align: center;
+                border-radius: $BorderRadius;
+                color: $LinkColor;
+                padding: 5px 10px;
+                margin-left: 4px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:hover {
+                    color: $LinkHoverColor;
+                }
+            }
+            .page-numbers.current {
+                background-color: $MainColor;
+                color: #ffffff;
+                &:hover {
+                    text-decoration: none;
+                    color: #ffffff;
+                }
+            }
+        }
+    }

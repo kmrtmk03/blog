@@ -1,0 +1,43 @@
+/* 共通箇所 */
+.article-midashi {
+    margin-bottom: 20px;
+    .article-date {
+        font-size: 12px;
+    }
+    .article-title {
+        font-size: 20px;
+        font-weight: bold;
+        a {
+            color: $MidashiColor;
+            font-size: 20px;
+            font-weight: bold;
+            &:hover {
+                color: $LinkHoverColor;
+            }
+            i {
+                font-size: 24px;
+            }
+        }
+    }
+    .article-subtitle {
+        margin-top: 10px;
+        a {
+            font-size: 12px;
+            margin-left: 10px;
+            color: $LinkColor;
+            &:first-child {
+                margin-left: 0px;
+            }
+            &:hover {
+                color: $LinkHoverColor;
+                text-decoration: underline;
+                i {
+                    color: $LinkHoverColor;
+                }
+            }
+            i {
+                color: $LinkColor;
+            }
+        }
+    }
+}

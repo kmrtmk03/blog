@@ -1,55 +1,33 @@
-    <!-- ヘッダー読み込み -->
     <?php get_header(); ?>
         <!-- メイン -->
         <section class="index-main">
-            <!-- コンテンツ -->
             <main class="l-left">
-                <!-- 記事 -->
                 <div class="index-article-wrap">
                     <?php if(have_posts()): while(have_posts()): the_post(); ?>
-                        <!-- 記事個別 -->
-                        <article class="index-article">
-                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                                <!-- 記事日付 -->
-                                <p class="index-article-date"><?php echo get_the_date(); ?></p>
-                                <!-- 記事タイトル -->
-                                <h3 class="index-article-title"><?php the_title(); ?></h3>
-                                <!-- 記事サムネイル -->
-                                <!-- サムネイルの比率は16:9で固定 -->
-                                <div class="index-article-img">
-                                    <?php the_post_thumbnail('null'); ?>
+                        <div class="index-article">
+                            <!-- 見出し -->
+                            <div class="article-midashi">
+                                <span class="article-date"><?php echo get_the_date(); ?></span>
+                                <h3 class="article-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                <div class="article-subtitle">
+                                    <?php category_list(); ?>
+                                    <?php show_tags(); ?>
                                 </div>
-                                <!-- 記事本文（抜粋) -->
-                                <div class="index-article-content">
-                                    <?php the_excerpt(); ?>
-                                </div>
-                                <!-- 記事カテゴリー -->
-                                <?php
-                                /* カテゴリーを取得 */
-                                $articleCategory = get_the_category();
-                                ?>
-                                <p class="index-article-category"><i class="fa fa-folder icon-awesome" aria-hidden="true"></i><?php echo $articleCategory[0]->name; ?></p>
-                            </a>
-                        </article>
+                            </div>
+                            <div class="article-content">
+                                <!-- サムネイル（16:9で固定） -->
+                                <div class="index-article-img"><?php the_post_thumbnail('null'); ?></div>
+                                <!-- 本文（抜粋) -->
+                                <div class="index-article-content"><?php the_content('続きを読む'); ?></div>
+                            </div>
+                        </div>
                     <?php endwhile; endif; ?>
                 </div>
-
                 <!-- ページネーション -->
                 <div class="page-nav-wrap">
-                    <?php
-                        echo paginate_links(array(
-                                'type' => 'link',
-                                'prev_text' => '前へ',
-                                'next_text' => '次へ',
-                                'end-size' => '1',
-                                'mid-size' => '1',
-                            )
-                        )
-                    ?>
+                    <?php pagenate(); ?>
                 </div>
             </main>
-            <!-- サイドバー読み込み -->
             <?php get_sidebar(); ?>
         </section>
-    <!-- フッター読み込み -->
     <?php get_footer(); ?>

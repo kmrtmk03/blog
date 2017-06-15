@@ -1,0 +1,37 @@
+/* ---------- リセット ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: $Text-Color;
+    font: {
+        size: 14px;
+        weight: normal;
+        family: sans-serif;
+    }
+    text-decoration: none;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+img {
+    vertical-align: bottom;
+}
+body {
+    // background-color: $BodyColor;
+}
+strong {
+    font-weight: bold;
+}
+pre {
+    background-color: #666666;
+    padding: 10px;
+    overflow-x: scroll;
+    span {
+        color: white;
+    }
+}
+.fa {
+    padding: {
+        right: 4px;
+    }
+}

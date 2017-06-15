@@ -1,0 +1,25 @@
+.pankuzu {
+    margin-top: 10px;
+    padding-left: 3%;
+    display: flex;
+    li {
+        &:not(:last-child) {
+            a {
+                &:hover {
+                    color: $LinkHoverColor;
+                    text-decoration: underline;
+                    i {
+                        color: $LinkHoverColor;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        span {
+            margin: {
+                left: 10px;
+                right: 10px;
+            }
+        }
+    }
+}

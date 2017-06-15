@@ -1,0 +1,32 @@
+/* ---------- 検索結果 ---------- */
+.search-result {
+    .search-midashi {
+        color: $MainColor;
+        margin-bottom: 30px;
+        .search-word {
+            font-weight: bold;
+        }
+    }
+    .search-result-title {
+        padding-left: 2%;
+        margin-bottom: 6px;
+        a {
+            color: $MidashiColor;
+            font: {
+                size: 18px;
+                weight: bold;
+            }
+            &:hover {
+                color: $SubColor;
+            }
+        }
+    }
+    p {
+        margin-bottom: 30px;
+        padding: {
+            bottom: 30px;
+            left: 2%;
+        }
+        border-bottom: 1px dashed $MainColor;
+    }
+}
