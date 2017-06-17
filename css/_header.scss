@@ -1,11 +1,13 @@
 /* ヘッダー */
 header {
-    background-color: $MainColor;
     padding: {
         top: 10px;
         bottom: 10px;
-        left: 3%;
+        left: 10%;
+        right: 10%;
     }
+    position: relative;
+    background-color: $MainColor;
     h2 {
         padding: 10px 0;
         a {
@@ -14,5 +16,85 @@ header {
                 height: 20px;
             }
         }
+    }
+    .show-nav {
+        font-weight: bold;
+        position: absolute;;
+        top: 20px;
+        right: 10%;
+        i {
+            color: white;
+            font-size: 24px;
+        }
+        &:hover {
+            cursor: pointer;
+            color: $LinkHoverColor;
+        }
+    }
+    .nav-menu{
+        display: none;
+        ul {
+            li {
+                text-align: right;
+                margin-top: 10px;
+                a {
+                    color: #fff;
+                    &:hover {
+                        color: $LinkHoverColor;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    .nav-open {
+        display: block;
+    }
+    .nav-close {
+        display: none;
+    }
+}
+
+
+@media (max-width: $sp) {
+    header {
+        padding: {
+            top: 6px;
+            bottom: 6px;
+            left: 5%;
+            right: 5%;
+        }
+        h2 {
+            a {
+                .header-logo {
+                    height: 14px;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .show-nav {
+            top: 16px;
+            right: 5%;
+            i {
+                font-size: 24px;
+            }
+        }
+        .nav-menu{
+            display: none;
+            ul {
+                li {
+                    text-align: right;
+                    margin-top: 8px;
+                    a {
+                    }
+                }
+            }
+        }
+    .nav-open {
+        display: block;
+    }
+    .nav-close {
+        display: none;
+    }
     }
 }

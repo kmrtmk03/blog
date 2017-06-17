@@ -18,7 +18,7 @@ Version: 1.0
 
 @import './css/single.scss';
 @import './css/search';
-
+@import './css/404';
 
 
 /* メインコンテンツ */
@@ -28,12 +28,27 @@ Version: 1.0
     display: flex;
     justify-content: space-between;
 }
-
 .category-tag-midashi,
 .search-word {
-    padding-left: 3%;
+    padding-left: 10%;
     margin-top: 10px;
     span {
         font-weight: bold;
+    }
+}
+
+@media (max-width: $sp) {
+    .index-main {
+        width: 90%;
+        margin: 40px auto;
+        display: block;
+    }
+    .category-tag-midashi,
+    .search-word {
+        padding-left: 5%;
+        margin-top: 10px;
+        span {
+            font-weight: bold;
+        }
     }
 }

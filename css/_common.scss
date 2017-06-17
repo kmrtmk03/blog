@@ -5,11 +5,11 @@
         font-size: 12px;
     }
     .article-title {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
         a {
             color: $MidashiColor;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: bold;
             &:hover {
                 color: $LinkHoverColor;
@@ -37,6 +37,40 @@
             }
             i {
                 color: $LinkColor;
+            }
+        }
+    }
+}
+
+@media (max-width: $sp) {
+    .article-midashi {
+        .article-date {
+            font-size: 14px;
+        }
+        .article-title {
+            font-size: 22px;
+            a {
+                font-size: 22px;
+                &:hover {
+                }
+                i {
+                    font-size: 24px;
+                }
+            }
+        }
+        .article-subtitle {
+            margin-top: 0px;
+            a {
+                font-size: 14px;
+                color: $LinkColor;
+                &:first-child {
+                }
+                &:hover {
+                    i {
+                    }
+                }
+                i {
+                }
             }
         }
     }

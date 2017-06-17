@@ -1,39 +1,10 @@
 {
 "AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and\/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https:\/\/codekitapp.com\/",
 "buildSteps": [
-	{
-		"name": "Process All Remaining Files and Folders",
-		"stepType": 1,
-		"uuidString": "65D17B70-BCE5-421F-BA4F-7CE6DECA87D4"
-		}
 	],
 "creatorBuild": "25813",
 "files": {
-	"\/.sass-cache\/db375df7aedf83f03f909b107c63bacbd5aca617\/style.scssc": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.sass-cache\/db375df7aedf83f03f909b107c63bacbd5aca617\/style.scssc",
-		"oF": 0
-		},
-	"\/archives.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/archives.php",
-		"oF": 0
-		},
-	"\/category.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/category.php",
-		"oF": 0
-		},
-	"\/comments.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/comments.php",
-		"oF": 0
-		},
-	"\/css\/_common.scss": {
+	"\/_common.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -41,12 +12,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/_common.css",
+		"oAP": "\/_common.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/_footer.scss": {
+	"\/_footer.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -54,12 +25,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/_footer.css",
+		"oAP": "\/_footer.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/_header.scss": {
+	"\/_header.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -67,12 +38,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/_header.css",
+		"oAP": "\/_header.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/_page-left.scss": {
+	"\/_page-left.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -80,12 +51,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/_page-left.css",
+		"oAP": "\/_page-left.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/_pankuzu.scss": {
+	"\/_pankuzu.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -93,12 +64,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/_pankuzu.css",
+		"oAP": "\/_pankuzu.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/_reset.scss": {
+	"\/_reset.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -106,12 +77,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/_reset.css",
+		"oAP": "\/_reset.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/_search.scss": {
+	"\/_search.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -119,12 +90,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/_search.css",
+		"oAP": "\/_search.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/_sidebar.scss": {
+	"\/_sidebar.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -132,12 +103,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/_sidebar.css",
+		"oAP": "\/_sidebar.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/_single.scss": {
+	"\/_single.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -145,12 +116,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/_single.css",
+		"oAP": "\/_single.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/_var.scss": {
+	"\/_var.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -158,224 +129,10 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/_var.css",
+		"oAP": "\/_var.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"\/footer.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/footer.php",
-		"oF": 0
-		},
-	"\/functions.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/functions.php",
-		"oF": 0
-		},
-	"\/header.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/header.php",
-		"oF": 0
-		},
-	"\/images\/logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/images\/logo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/images\/prof.jpg": {
-		"ft": 16384,
-		"iS": 733666,
-		"oA": 0,
-		"oAP": "\/images\/prof.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/shousai.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/images\/shousai.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/images\/thumbnail-css.png": {
-		"ft": 32768,
-		"iS": 14659,
-		"oA": 0,
-		"oAP": "\/images\/thumbnail-css.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/thumbnail-etc.png": {
-		"ft": 32768,
-		"iS": 10359,
-		"oA": 0,
-		"oAP": "\/images\/thumbnail-etc.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/thumbnail-html.png": {
-		"ft": 32768,
-		"iS": 10651,
-		"oA": 0,
-		"oAP": "\/images\/thumbnail-html.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/thumbnail-js.png": {
-		"ft": 32768,
-		"iS": 17853,
-		"oA": 0,
-		"oAP": "\/images\/thumbnail-js.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/thumbnail-php.png": {
-		"ft": 32768,
-		"iS": 8777,
-		"oA": 0,
-		"oAP": "\/images\/thumbnail-php.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/thumbnail-wordpress.png": {
-		"ft": 32768,
-		"iS": 8377,
-		"oA": 0,
-		"oAP": "\/images\/thumbnail-wordpress.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/index.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/index.php",
-		"oF": 0
-		},
-	"\/js\/nav-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/js\/nav-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/nav.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/js\/nav-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/page.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/page.php",
-		"oF": 0
-		},
-	"\/pankuzu.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/pankuzu.php",
-		"oF": 0
-		},
-	"\/screenshot.png": {
-		"ft": 32768,
-		"iS": 6675,
-		"oA": 0,
-		"oAP": "\/screenshot.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/search.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/search.php",
-		"oF": 0
-		},
-	"\/sidebar.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sidebar.php",
-		"oF": 0
-		},
-	"\/single.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/single.php",
-		"oF": 0
-		},
-	"\/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/style-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/style.css.map": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/style.css.map",
-		"oF": 0
-		},
-	"\/style.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/style.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/tag.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/tag.php",
-		"oF": 0
 		}
 	},
 "hooks": [
@@ -383,10 +140,10 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 518597298,
-	"displayValue": "new-blog",
+	"creationDate": 519254885,
+	"displayValue": "css",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-kahn"
+	"iconImageName": "defaultFrameworkIcon"
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

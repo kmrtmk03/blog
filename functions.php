@@ -28,11 +28,11 @@
     add_filter('excerpt_mblength', 'myLength');
 
     // 投稿だけを検索対象とする
-    function my_search_condition($search) {
-    	$search .= " AND (post_type = 'post' OR post_type = 'custompost')";
-    	return $search;
-    }
-    add_filter('posts_search','my_search_condition');
+    // function my_search_condition($search) {
+    // 	$search .= " AND (post_type = 'post' OR post_type = 'custompost')";
+    // 	return $search;
+    // };
+    // add_filter('posts_search','my_search_condition');
 
 
     //metaタグ - descriptionの出力
@@ -115,3 +115,16 @@
         return $link;
     }
     add_filter('the_content_more_link', 'remove_more_jump_link');
+
+
+    // jsファイル読み込み
+    if (!is_admin()) {
+       function register_script(){
+            wp_register_script( 'nav', get_stylesheet_directory_uri() . '/js/nav.js', array( 'jquery' ), '', true);
+            }
+        function add_script() {
+            register_script();
+            wp_enqueue_script('nav');
+            }
+        add_action('wp_enqueue_scripts', 'add_script');
+    }

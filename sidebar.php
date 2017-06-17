@@ -1,20 +1,6 @@
 <!-- サイドバー -->
 <div class="l-right">
     <div class="sidebar">
-        <!-- プロフィール -->
-        <section class="sidebar-section">
-            <div class="sidebar-prof">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/prof.jpg" alt="" class="prof-img">
-                <p class="prof-name"><?php the_author_meta('prof-name'); ?></p>
-                <p class="prof-moji">1993年生まれ。<br>WEB制作が好きです</p>
-                <div class="prof-link-wrap">
-                    <a class="prof-link my-prof" href="<?php the_author_meta('portfolio'); ?>" target="_blank">ポートフォリオサイト</a>
-                    <a class="prof-link sns-facebook" href="<?php the_author_meta('facebook'); ?>" target="_blank">Facebook</a>
-                    <a class="prof-link sns-instagram" href="<?php the_author_meta('instagram'); ?>" target="_blank">Instagram</a>
-                    <a class="prof-link sns-github" href="<?php the_author_meta('github'); ?>" target="_blank">Github</a>
-                </div>
-            </div>
-        </section>
         <!-- 新着記事 -->
         <section class="sidebar-section">
             <h2 class="sidebar-midashi"><i class="fa fa-newspaper-o" aria-hidden="true"></i>新着記事</h2>

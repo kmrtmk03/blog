@@ -1,5 +1,5 @@
     .l-left {
-        width: 72%;
+        width: 68%;
         /* 記事 */
         .index-article-wrap {
             .index-article {
@@ -8,6 +8,8 @@
                 padding: 40px 10px;
                 &:nth-of-type(1) {
                     padding-top: 0;
+                }
+                &:last-child {
                 }
                 .article-content {
                     margin-bottom: 0;
@@ -25,7 +27,7 @@
                         .more-link {
                             border: 1px solid black;
                             border-radius: $BorderRadius;
-                            padding: 10px 0;
+                            padding: 6px 0;
                             width: 30%;
                             text-align: center;
                             display: block;
@@ -148,3 +150,96 @@
             }
         }
     }
+
+
+@media (max-width: $sp) {
+    .l-left {
+        width: 100%;
+        /* 記事 */
+        .index-article-wrap {
+            .index-article {
+                border-bottom: 1px dashed black;
+                width: 100%;
+                padding: 40px 0px;
+                &:nth-of-type(1) {
+                    padding-top: 0;
+                }
+                .article-content {
+                    margin-bottom: 0;
+                    .index-article-img {
+                        width: 100%;
+                        img {
+                        }
+                    }
+                    .index-article-content {
+                        .more-link {
+                            padding: 10px 0;
+                            width: 100%;
+                            &:hover {
+                            }
+                        }
+                        h1,
+                        h2,
+                        h3,
+                        h4,
+                        h5,
+                        h6 {
+                        }
+                        h1,
+                        h2,
+                        h3,
+                        h4 {
+                        }
+                        h1,
+                        h2,
+                        h3 {
+                        }
+                        h1 {
+                        }
+                        h2 {
+                        }
+                        h3 {
+                        }
+                        h4,
+                        h5,
+                        h6 {
+                        }
+                        ul,
+                        ol {
+                            li {
+                            }
+                        }
+                        ul {
+                            li {
+                            }
+                        }
+                        ol {
+                            li {
+                            }
+                        }
+                        a {
+                        }
+                        p {
+                        }
+                    }
+                }
+            }
+        }
+
+        /* ページネーション */
+        .page-nav-wrap {
+            margin-top: 20px;
+            .page-numbers {
+                padding: 5px 14px;
+                &:first-child {
+                }
+                &:hover {
+                }
+            }
+            .page-numbers.current {
+                &:hover {
+                }
+            }
+        }
+    }
+}

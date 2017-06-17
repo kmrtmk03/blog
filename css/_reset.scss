@@ -35,3 +35,14 @@ pre {
         right: 4px;
     }
 }
+
+
+@media (max-width: $sp) {
+    /* ---------- リセット ---------- */
+    * {
+        font: {
+            size: 16px;
+        }
+        line-height: 1.7;
+    }
+}
