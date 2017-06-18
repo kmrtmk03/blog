@@ -140,7 +140,7 @@ header {
       height: 14px;
       vertical-align: middle; }
     header .show-nav {
-      top: 16px;
+      top: 18px;
       right: 5%; }
       header .show-nav i {
         font-size: 24px; }
@@ -443,6 +443,8 @@ footer {
     color: #ffffff; }
 
 /* 記事ページ */
+.article-main-wrap img {
+  margin: 10px 0; }
 .article-main-wrap .article-main {
   padding-bottom: 30px;
   padding-left: 10px;
