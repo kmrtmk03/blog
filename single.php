@@ -33,6 +33,7 @@
                     <div class="single-share">
                         <a href="https://www.facebook.com/sharer.php?u=<?php echo urlencode(get_permalink()); ?>&amp;t=<?php urlencode(the_title()); ?>" class="single-facebook">Facebookでシェア</a>
                         <a href="http://twitter.com/intent/tweet?text=<?php echo urlencode(the_title("","",0)); ?>&amp;<?php echo urlencode(get_permalink()); ?>&amp;url=<?php echo urlencode(get_permalink()); ?>" class="single-twitter">Twitterでシェア</a>
+                        <a class="single-line" href="http://line.me/R/msg/text/?<?php urlencode(the_title()); ?><?php echo urlencode(get_permalink()); ?>">LINEでシェア</a>
                     </div>
                 </div>
                 <!-- ページナビゲーション -->

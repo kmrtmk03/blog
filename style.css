@@ -442,9 +442,28 @@ footer {
     padding: 10px 0;
     color: #ffffff; }
 
-/* 記事ページ */
 .article-main-wrap img {
   margin: 10px 0; }
+.article-main-wrap .wpcf7 textarea,
+.article-main-wrap .wpcf7 input {
+  border: 1px solid black;
+  width: 80%;
+  margin-top: 4px; }
+.article-main-wrap .wpcf7 p {
+  margin-top: 16px; }
+.article-main-wrap .wpcf7 .wpcf7-submit {
+  border-radius: 4px;
+  padding: 6px 20px;
+  border: 1px solid black;
+  color: black;
+  background-color: white; }
+  .article-main-wrap .wpcf7 .wpcf7-submit:hover {
+    color: white;
+    background-color: orange;
+    border-color: orange;
+    cursor: pointer; }
+
+/* 記事ページ */
 .article-main-wrap .article-main {
   padding-bottom: 30px;
   padding-left: 10px;
@@ -499,6 +518,11 @@ footer {
       color: #55ACEE; }
       .article-main-wrap .article-main .single-share .single-twitter:hover {
         background-color: #55ACEE; }
+    .article-main-wrap .article-main .single-share .single-line {
+      border: 1px solid #00C300;
+      color: #00C300; }
+      .article-main-wrap .article-main .single-share .single-line:hover {
+        background-color: #00C300; }
 .article-main-wrap .single-move {
   display: flex;
   justify-content: center;
@@ -569,6 +593,10 @@ footer {
     color: #91AA9D; }
 
 @media (max-width: 768px) {
+  .article-main-wrap .wpcf7 textarea,
+  .article-main-wrap .wpcf7 input {
+    width: 100%; }
+
   /* 記事ページ */
   .article-main-wrap .article-main {
     padding-left: 0px;
