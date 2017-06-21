@@ -1,5 +1,5 @@
     <?php get_header(); ?>
-        <!-- メイン -->
+    	<!-- メイン -->
         <section class="index-main">
             <main class="l-left">
                 <div class="index-article-wrap">

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*
 Theme Name: NEW-BLOG
 Author: KIMURA TOMOKI
@@ -5,21 +7,18 @@ Description: This is my blog theme.
 Version: 1.0
 */
 
+/* ファイル読み込み */
 @import './css/var';
-
 @import './css/reset';
 @import './css/common';
-
 @import './css/header';
 @import './css/pankuzu';
 @import './css/page-left';
 @import './css/sidebar';
 @import './css/footer.scss';
-
 @import './css/single.scss';
 @import './css/search';
 @import './css/404';
-
 
 /* メインコンテンツ */
 .index-main {
@@ -37,6 +36,7 @@ Version: 1.0
     }
 }
 
+/* メディアクエリ */
 @media (max-width: $sp) {
     .index-main {
         width: 90%;
