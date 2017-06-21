@@ -9,7 +9,6 @@
         <meta name="keywords" content="web制作, HTML, CSS, JavaScript, PHP, WordPress, デザイン, カメラ, IoT">
         <!-- metaタグ-description -->
         <?php echo_meta_description_tag(); ?>
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
         <script src="https://use.fontawesome.com/df5c304689.js"></script>
         <?php wp_head(); ?>
     </head>

@@ -434,6 +434,8 @@ header {
                 width: 28%; } }
 /* フッター */
 footer {
+  margin-top: 90px;
+  position: relative;
   background-color: #000000;
   /* コピーライト */ }
   footer .copy {

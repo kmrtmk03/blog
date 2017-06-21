@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <!-- メインセクション -->
 <section class="index-main singlepage">
     <!-- コンテンツ -->
@@ -22,5 +21,4 @@
     <!-- サイドバー読み込み -->
     <?php get_sidebar(); ?>
 </section>
-
 <?php get_footer(); ?>

@@ -117,14 +117,14 @@
     add_filter('the_content_more_link', 'remove_more_jump_link');
 
 
-    // jsファイル読み込み
-    if (!is_admin()) {
-       function register_script(){
-            wp_register_script( 'nav', get_stylesheet_directory_uri() . '/js/nav.js', array( 'jquery' ), '', true);
-            }
-        function add_script() {
-            register_script();
-            wp_enqueue_script('nav');
-            }
-        add_action('wp_enqueue_scripts', 'add_script');
+    // JSの読み込み
+    function add_script_nav() {
+        wp_enqueue_script( 'script-nav', get_stylesheet_directory_uri() . '/js/nav.js', array( 'jquery' ), '', true);
     }
+    add_action('wp_enqueue_scripts', 'add_script_nav');
+
+    // CSSの読み込み
+    function add_css_main() {
+        wp_enqueue_style('style-main', get_template_directory_uri().'/style.css', '', '20170621');
+    }
+    add_action('wp_enqueue_scripts', 'add_css_main');
