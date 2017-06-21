@@ -27,14 +27,6 @@
     }
     add_filter('excerpt_mblength', 'myLength');
 
-    // 投稿だけを検索対象とする
-    // function my_search_condition($search) {
-    // 	$search .= " AND (post_type = 'post' OR post_type = 'custompost')";
-    // 	return $search;
-    // };
-    // add_filter('posts_search','my_search_condition');
-
-
     //metaタグ - descriptionの出力
     function get_meta_description() {
       global $post;
