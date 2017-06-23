@@ -116,6 +116,6 @@
 
     // CSSの読み込み
     function add_css_main() {
-        wp_enqueue_style('style-main', get_template_directory_uri().'/style.css', '', '20170621');
+        wp_enqueue_style('style-main', get_template_directory_uri().'/style.css');
     }
     add_action('wp_enqueue_scripts', 'add_css_main');

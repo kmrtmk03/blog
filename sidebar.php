@@ -1,6 +1,15 @@
 <!-- サイドバー -->
 <div class="l-right">
     <div class="sidebar">
+
+        <!-- 検索フォーム -->
+        <section class="sidebar-section">
+            <h2 class="sidebar-midashi"><i class="fa fa-search" aria-hidden="true"></i>サイト内検索</h2>
+            <div class="sidebar-search">
+                <?php get_search_form(); ?>
+            </div>
+        </section>
+
         <!-- 新着記事 -->
         <section class="sidebar-section">
             <h2 class="sidebar-midashi"><i class="fa fa-newspaper-o" aria-hidden="true"></i>新着記事</h2>
@@ -18,6 +27,7 @@
             </ul>
             <?php endif; ?>
         </section>
+
         <!-- カテゴリー -->
         <section class="sidebar-section">
             <h2 class="sidebar-midashi"><i class="fa fa-folder" aria-hidden="true"></i>カテゴリー</h2>
@@ -31,12 +41,12 @@
                  ?>
             </ul>
         </section>
-        <!-- 検索フォーム -->
+
+        <!-- Twitter埋め込み -->
         <section class="sidebar-section">
-            <h2 class="sidebar-midashi"><i class="fa fa-search" aria-hidden="true"></i>サイト内検索</h2>
-            <div class="sidebar-search">
-                <?php get_search_form(); ?>
-            </div>
+            <h2 class="sidebar-midashi"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</h2>
+            <a class="twitter-timeline" href="https://twitter.com/kmrtmk03" data-width="100%" data-tweet-limit="3" data-chrome="noheader nofooter">Tweets by kmrtmk03</a>
         </section>
+
     </div>
 </div>

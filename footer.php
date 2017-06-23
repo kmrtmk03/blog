@@ -5,5 +5,6 @@
         </footer>
         <!-- スクリプト読み込み -->
         <?php wp_footer(); ?>
+    	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     </body>
 </html>
