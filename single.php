@@ -4,7 +4,7 @@
 <?php get_template_part('pankuzu'); ?>
 
 <!-- メインセクション -->
-<section class="index-main singlepage">
+<section class="index-main singlepage kijipage">
     <!-- コンテンツ -->
     <main class="l-left">
         <!-- 記事ループ開始 -->

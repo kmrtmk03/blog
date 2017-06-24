@@ -4,9 +4,16 @@
     font-size: 12px;
 }
 
+.kijipage {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 .article-main-wrap {
     img {
-        margin: 10px 0;
+        margin: 20px 0;
     }
     .wpcf7 {
         textarea,
@@ -169,7 +176,7 @@
     h6 {
         margin: {
             top: 50px;
-            bottom: 0.3em;
+            bottom: 20px;
         }
     }
     h1,
@@ -201,6 +208,9 @@
     h6 {
         margin-top: 20px;
         font-size: 16px;
+    }
+    h4 {
+        margin-bottom: 10px;
     }
     ul,
     ol {

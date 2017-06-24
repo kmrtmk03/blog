@@ -448,8 +448,12 @@ footer {
 .timeline-Header-title {
   font-size: 12px; }
 
+.kijipage img {
+  width: 100%;
+  height: auto; }
+
 .article-main-wrap img {
-  margin: 10px 0; }
+  margin: 20px 0; }
 .article-main-wrap .wpcf7 textarea,
 .article-main-wrap .wpcf7 input {
   border: 1px solid black;
@@ -562,7 +566,7 @@ footer {
 .article-main-content h5,
 .article-main-content h6 {
   margin-top: 50px;
-  margin-bottom: 0.3em; }
+  margin-bottom: 20px; }
 .article-main-content h1,
 .article-main-content h2,
 .article-main-content h3,
@@ -587,6 +591,8 @@ footer {
 .article-main-content h6 {
   margin-top: 20px;
   font-size: 16px; }
+.article-main-content h4 {
+  margin-bottom: 10px; }
 .article-main-content ul li,
 .article-main-content ol li {
   margin-left: 2em; }
