@@ -48,5 +48,15 @@
             <a class="twitter-timeline" href="https://twitter.com/kmrtmk03" data-width="100%" data-tweet-limit="3" data-chrome="noheader nofooter">Tweets by kmrtmk03</a>
         </section>
 
+        <!-- Instagram埋め込み -->
+        <!-- アクセストークン 484075400.7e8de22.b26ed292a67a4078aa27aa1f1163fb20 -->
+        <!-- JSONのURL https://api.instagram.com/v1/users/self/media/recent/?access_token=484075400.7e8de22.b26ed292a67a4078aa27aa1f1163fb20 -->
+        <section class="sidebar-section sidebar-instagram">
+                <h2 class="sidebar-midashi"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</h2>
+                <div class="sidebar-instagram-album">
+                    <?php sidebar_Instagram(); ?>
+                </div>
+        </section>
+
     </div>
 </div>

@@ -312,6 +312,29 @@ header {
       margin-top: 20px; }
       .l-left .page-nav-wrap .page-numbers {
         padding: 5px 14px; } }
+.twitter-timeline {
+  margin: 10px; }
+
+.sidebar-instagram .sidebar-instagram-album {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .sidebar-instagram .sidebar-instagram-album div {
+    margin-top: 4px;
+    display: block;
+    width: 49%;
+    height: 100px;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .sidebar-instagram .sidebar-instagram-album div:nth-of-type(2n+1) {
+      margin-right: 2%; }
+    .sidebar-instagram .sidebar-instagram-album div:nth-of-type(7), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(8), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(9), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(10), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(11), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(12), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(13), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(14), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(15), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(16), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(17), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(18), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(19), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(20) {
+      display: none; }
+
 /* 右側 */
 .l-right {
   width: 27%; }
@@ -405,6 +428,29 @@ header {
           text-decoration: underline; }
 
 @media (max-width: 768px) {
+  .twitter-timeline {
+    margin: 0px; }
+
+  .sidebar-instagram .sidebar-instagram-album {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .sidebar-instagram .sidebar-instagram-album div {
+      margin-top: 4px;
+      display: block;
+      width: 49%;
+      height: 100px;
+      vertical-align: middle;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+      .sidebar-instagram .sidebar-instagram-album div:nth-of-type(2n+1) {
+        margin-right: 2%; }
+      .sidebar-instagram .sidebar-instagram-album div:nth-of-type(7), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(8), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(9), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(10), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(11), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(12), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(13), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(14), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(15), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(16), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(17), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(18), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(19), .sidebar-instagram .sidebar-instagram-album div:nth-of-type(20) {
+        display: none; }
+
   /* 右側 */
   .l-right {
     width: 100%;

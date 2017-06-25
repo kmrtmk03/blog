@@ -119,3 +119,13 @@
         wp_enqueue_style('style-main', get_template_directory_uri().'/style.css');
     }
     add_action('wp_enqueue_scripts', 'add_css_main');
+
+    // instagram呼び出し
+    function sidebar_Instagram() {
+        $myAccessToken = '484075400.7e8de22.b26ed292a67a4078aa27aa1f1163fb20'; //実際のアクセストークンを入力
+        $json = file_get_contents('https://api.instagram.com/v1/users/self/media/recent/?access_token='.$myAccessToken);
+        $obj = json_decode($json);
+        foreach($obj->data as $data){
+            echo '<div style="background-image:url('.$data->images->low_resolution->url.');"></div>';
+        }
+    }

@@ -1,150 +1,244 @@
 @charset "UTF-8";
 
-    /* 右側 */
-    .l-right {
-        width: 27%;
-        .sidebar {
-            /* 新着記事 */
-            .sidebar-section {
-                margin-top: 60px;
-                &:first-child {
-                    margin-top: 0;
+.twitter-timeline {
+    margin: 10px;
+}
+.sidebar-instagram {
+    .sidebar-instagram-album {
+        padding: {
+            left: 10px;
+            right: 10px;
+        }
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        div {
+            margin-top: 4px;
+            display: block;
+            width: 49%;
+            height: 100px;
+            vertical-align: middle;
+            background: {
+                size: cover;
+                position: center;
+                repeat: no-repeat;
+            }
+            &:nth-of-type(2n+1) {
+                margin-right: 2%;
+            }
+            &:nth-of-type(7),
+            &:nth-of-type(8),
+            &:nth-of-type(9),
+            &:nth-of-type(10),
+            &:nth-of-type(11),
+            &:nth-of-type(12),
+            &:nth-of-type(13),
+            &:nth-of-type(14),
+            &:nth-of-type(15),
+            &:nth-of-type(16),
+            &:nth-of-type(17),
+            &:nth-of-type(18),
+            &:nth-of-type(19),
+            &:nth-of-type(20) {
+                display: none;
+            }
+        }
+    }
+}
+
+
+/* 右側 */
+.l-right {
+    width: 27%;
+    .sidebar {
+        /* 新着記事 */
+        .sidebar-section {
+            margin-top: 60px;
+            &:first-child {
+                margin-top: 0;
+            }
+            /* サイドバー見出し */
+            .sidebar-midashi {
+                margin-bottom: 10px;
+                color: $MainColor;
+                font: {
+                    weight: bold;
                 }
-                /* サイドバー見出し */
-                .sidebar-midashi {
-                    margin-bottom: 10px;
-                    color: $MainColor;
-                    font: {
-                        weight: bold;
-                    }
-                    padding: {
-                        top: 4px;
-                        bottom: 4px;
-                        left: 10px;
-                        right: 10px;
-                    }
+                padding: {
+                    top: 4px;
+                    bottom: 4px;
+                    left: 10px;
+                    right: 10px;
                 }
-                .sidebar-search {
-                    .searchform {
-                        padding-left: 10px;
-                        padding-right: 10px;
-                        div {
-                            display: flex;
-                            justify-content: space-between;
-                            input {
-                                display: block;
-                                &:nth-of-type(1) {
-                                    width: 70%;
-                                    border: none;
-                                    border: 1px solid black;
-                                }
-                                &:nth-of-type(2) {
-                                    width: 25%;
-                                    border: none;
-                                    border: 1px solid black;
-                                    background-color: white;
-                                    color: black;
-                                    border-radius: $BorderRadius;
-                                    &:hover {
-                                        cursor: pointer;
-                                        border-color: $LinkHoverColor;
-                                        background-color: $LinkHoverColor;
-                                        color: white;
-                                    }
-                                }
-                            }
-                            label {
-                                display: none;
-                            }
-                        }
-                    }
-                }
-                .sidebar-prof {
-                    border: 1px solid black;
-                    border-radius: $BorderRadius;
-                    padding: 20px 10px;
-                    text-align: center;
-                    .prof-img {
-                        width: 50%;
-                        height: auto;
-                        border-radius: 50%;
-                        margin-bottom: 10px;
-                    }
-                    .prof-name {
-                        margin-bottom: 5px;
-                        font-weight: bold;
-                    }
-                    .prof-moji {
-                    }
-                    .prof-link-wrap {
-                        margin-top: 10px;
-                        .prof-link {
-                            font-size: 12px;
+            }
+            .sidebar-search {
+                .searchform {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    div {
+                        display: flex;
+                        justify-content: space-between;
+                        input {
                             display: block;
-                            padding: 4px 10px;
-                            color: #333333;
-                            border-radius: $BorderRadius;
-                            margin-top: 2px;
-                            &:hover {
-                                color: #ffffff;
-                                i {
-                                    color: #ffffff;
+                            &:nth-of-type(1) {
+                                width: 70%;
+                                border: none;
+                                border: 1px solid black;
+                            }
+                            &:nth-of-type(2) {
+                                width: 25%;
+                                border: none;
+                                border: 1px solid black;
+                                background-color: white;
+                                color: black;
+                                border-radius: $BorderRadius;
+                                &:hover {
+                                    cursor: pointer;
+                                    border-color: $LinkHoverColor;
+                                    background-color: $LinkHoverColor;
+                                    color: white;
                                 }
                             }
-                            i {
-                                font-size: 16px;
-                                color: #333333;
-                                padding-right: 10px;
-                            }
                         }
-                        .my-prof {
-                            &:hover {
-                                background-color: $SubColor;
-                            }
-                        }
-                        .sns-facebook {
-                            &:hover {
-                                background-color: $Facebook;
-                            }
-                        }
-                        .sns-instagram {
-                            &:hover {
-                                background-color: $Instagram;
-                            }
-                        }
-                        .sns-github {
-                            &:hover {
-                                background-color: $Github;
-                            }
+                        label {
+                            display: none;
                         }
                     }
                 }
-                .newarticle-list-parent {
-                    .cat-item {
-                        .children {
-                            >li {
-                                padding-left: 20px;
-                                margin-top: 2px;
+            }
+            .sidebar-prof {
+                border: 1px solid black;
+                border-radius: $BorderRadius;
+                padding: 20px 10px;
+                text-align: center;
+                .prof-img {
+                    width: 50%;
+                    height: auto;
+                    border-radius: 50%;
+                    margin-bottom: 10px;
+                }
+                .prof-name {
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+                .prof-moji {
+                }
+                .prof-link-wrap {
+                    margin-top: 10px;
+                    .prof-link {
+                        font-size: 12px;
+                        display: block;
+                        padding: 4px 10px;
+                        color: #333333;
+                        border-radius: $BorderRadius;
+                        margin-top: 2px;
+                        &:hover {
+                            color: #ffffff;
+                            i {
+                                color: #ffffff;
                             }
                         }
+                        i {
+                            font-size: 16px;
+                            color: #333333;
+                            padding-right: 10px;
+                        }
                     }
-                    li {
-                        margin-top: 8px;
-                        padding-left: 10px;
-                        a {
-                            &:hover {
-                                color: $LinkHoverColor;
-                                text-decoration: underline;
-                            }
+                    .my-prof {
+                        &:hover {
+                            background-color: $SubColor;
+                        }
+                    }
+                    .sns-facebook {
+                        &:hover {
+                            background-color: $Facebook;
+                        }
+                    }
+                    .sns-instagram {
+                        &:hover {
+                            background-color: $Instagram;
+                        }
+                    }
+                    .sns-github {
+                        &:hover {
+                            background-color: $Github;
+                        }
+                    }
+                }
+            }
+            .newarticle-list-parent {
+                .cat-item {
+                    .children {
+                        >li {
+                            padding-left: 20px;
+                            margin-top: 2px;
+                        }
+                    }
+                }
+                li {
+                    margin-top: 8px;
+                    padding-left: 10px;
+                    a {
+                        &:hover {
+                            color: $LinkHoverColor;
+                            text-decoration: underline;
                         }
                     }
                 }
             }
         }
     }
+}
 
 
 @media (max-width: $sp) {
+
+.twitter-timeline {
+    margin: 0px;
+}
+.sidebar-instagram {
+    .sidebar-instagram-album {
+        padding: {
+            left: 10px;
+            right: 10px;
+        }
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        div {
+            margin-top: 4px;
+            display: block;
+            width: 49%;
+            height: 100px;
+            vertical-align: middle;
+            background: {
+                size: cover;
+                position: center;
+                repeat: no-repeat;
+            }
+            &:nth-of-type(2n+1) {
+                margin-right: 2%;
+            }
+            &:nth-of-type(7),
+            &:nth-of-type(8),
+            &:nth-of-type(9),
+            &:nth-of-type(10),
+            &:nth-of-type(11),
+            &:nth-of-type(12),
+            &:nth-of-type(13),
+            &:nth-of-type(14),
+            &:nth-of-type(15),
+            &:nth-of-type(16),
+            &:nth-of-type(17),
+            &:nth-of-type(18),
+            &:nth-of-type(19),
+            &:nth-of-type(20) {
+                display: none;
+            }
+        }
+    }
+}
+
     /* 右側 */
     .l-right {
         width: 100%;
