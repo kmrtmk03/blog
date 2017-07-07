@@ -122,9 +122,13 @@
 
     // instagram呼び出し
     function sidebar_Instagram() {
-        $myAccessToken = '484075400.7e8de22.b26ed292a67a4078aa27aa1f1163fb20'; //実際のアクセストークンを入力
+        // アクセストークン
+        $myAccessToken = '484075400.7e8de22.b26ed292a67a4078aa27aa1f1163fb20';
+        // JSONファイルを取得
         $json = file_get_contents('https://api.instagram.com/v1/users/self/media/recent/?access_token='.$myAccessToken);
+        // json文字列をデコードする
         $obj = json_decode($json);
+        // 出力する
         foreach($obj->data as $data){
             echo '<div style="background-image:url('.$data->images->low_resolution->url.');"></div>';
         }
